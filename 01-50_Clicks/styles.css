@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 90vw;
+    height: 90vh;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+}
+
+.grid-item.clicked .inner-block {
+    height: 100%;
+    width: 0%;
+}
+
+element.style {
+    transform: scale(1);
+}
+
+.staggering {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.small {
+    width: 20%;
+    height: 20%;
+    background-color: rgba(50,230,230,0.2);
+}
+
+.block-array {
+    width: 100%;
+    height: 100%;
+}
+
+.block-chain {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 38%;
+    /* transform: translate(0, 40%); */
+}
+
+.separate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.separate-horizontal {
+    left: 40%;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.overlap {
+    position: absolute;
+    left: 40%;
+    display: block;
+}
