@@ -1,0 +1,362 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200vh;
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.specimen {
+    grid-template-columns: repeat(7, 120px);
+    grid-gap: 60px;
+}
+
+.display {
+    grid-template-columns: repeat(9, 120px);
+    grid-gap: 30px;
+    margin-top: 200px;
+}
+
+.letter {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.road {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.empty {
+    background-color: white;
+    color: black;
+}
+
+.left-flat {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.right-flat {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.all-flat {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.top-right-round {
+    border-radius: 10px 20px 0px 10px;
+}
+
+.top-right-round-vertical {
+    border-radius: 0px 20px 10px 10px;
+}
+
+.top-left-round {
+    border-radius: 20px 10px 10px 0px;
+}
+
+.top-left-round-vertical {
+    border-radius: 20px 0px 10px 10px;
+}
+
+.top-round {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.top-right-bottom-left-round {
+    border-radius: 0px 20px 0px 20px;
+}
+
+.bottom-right-round {
+    border-radius: 10px 0px 20px 10px;
+}
+
+.bottom-right-round-vertical {
+    border-radius: 10px 10px 20px 0px;
+}
+
+.bottom-left-round {
+    border-radius: 0px 10px 10px 20px;
+}
+
+.bottom-left-round-vertical {
+    border-radius: 10px 10px 0px 20px;
+}
+
+.bottom-round {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.left-round {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.right-round {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.l-horizontal {
+    width: 120px;
+    height: 20px;
+}
+
+.l-vertical {
+    width: 20px;
+    height: 120px;
+}
+
+.m-horizontal {
+    width: 80px;
+    height: 20px;
+}
+
+.m-vertical {
+    width: 20px;
+    height: 80px;
+}
+
+.s-horizontal {
+    width: 40px;
+    height: 20px;
+}
+
+.s-vertical {
+    width: 20px;
+    height: 40px;
+}
+
+.top {
+    top: 0px;
+}
+
+.top1 {
+    top: 20px;
+}
+
+.top2 {
+    top: 40px;
+}
+
+.top3 {
+    top: 60px;
+}
+
+.top4 {
+    top: 80px;
+}
+
+.top-bottom-center {
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bottom {
+    bottom: 0px;
+}
+
+.left {
+    left: 0px;
+}
+
+.left1 {
+    left: 20px;
+}
+
+.left2 {
+    left: 40px;
+}
+
+.left3 {
+    left: 60px;
+}
+
+.left4 {
+    left: 80px;
+}
+
+.left-right-center {
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    right: 0px;
+}
+
+.overpass1 {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.overpass2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.horizontal {
+    display: flex;
+    height: 20px;
+}
+
+.vertical {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20px;
+}
+
+.small {
+    width: 20px;
+    height: 20px;
+}
+
+.overpass1 .el {
+    background-color: rgba(50, 230, 230, 0.8);
+}
+
+.overpass2 .el {
+    background-color: rgba(255, 213, 0, 0.8);
+}
+
+.separate {
+    display: block;
+}
+
+.upward> :first-child {
+    border-radius: 100% 0% 0% 0%;
+
+}
+
+.upward> :last-child {
+    border-radius: 0% 100% 0% 0%;
+
+}
+
+.downward> :first-child {
+    border-radius: 0% 0% 0% 100%;
+
+}
+
+.downward> :last-child {
+    border-radius: 0% 0% 100% 0%;
+
+}
+
+.leftward> :first-child {
+    border-radius: 100% 0% 0% 0%;
+
+}
+
+.leftward> :last-child {
+    border-radius: 0% 0% 0% 100%;
+
+}
+
+.rightward> :first-child {
+    border-radius: 0% 100% 0% 0%;
+
+}
+
+.rightward> :last-child {
+    border-radius: 0% 0% 100% 0%;
+
+}
+
+.positive-vertical> :first-child {
+    border-radius: 100% 0% 0% 0%;
+
+}
+
+.positive-vertical> :last-child {
+    border-radius: 0% 0% 100% 0%;
+
+}
+
+.positive-horizontal> :first-child {
+    border-radius: 100% 0% 0% 0%;
+
+}
+
+.positive-horizontal> :last-child {
+    border-radius: 0% 0% 100% 0%;
+
+}
+
+.negative-vertical> :first-child {
+    border-radius: 0% 100% 0% 0%;
+
+}
+
+.negative-vertical> :last-child {
+    border-radius: 0% 0% 0% 100%;
+
+}
+
+.negative-horizontal> :first-child {
+    border-radius: 0% 0% 0% 100%;
+
+}
+
+.negative-horizontal> :last-child {
+    border-radius: 0% 100% 0% 0%;
+
+}
+
+/* Button styles */
+#refreshButton {
+    background-color: rgba(230,0,150,1);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+#refreshButton:hover {
+    background-color: rgba(230,0,150,0.2);
+}
+
+#specimenButton {
+    background-color: rgba(230,0,150,1);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+#specimenButton:hover {
+    background-color: rgba(230,0,150,0.2);
+}
