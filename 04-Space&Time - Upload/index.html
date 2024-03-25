@@ -38,6 +38,7 @@
 
 <body>
 
+  <div class="left">
   <div class="photos-container">
     <img class="photo _10" id="photo-13" src="Photos Export/Frame 13.png" />
     <img class="photo _02" id="photo-12" src="Photos Export/Frame 12.png" />
@@ -53,9 +54,15 @@
     <img class="photo _12" id="photo-2" src="Photos Export/Frame 2.png" />
     <img class="photo _13" id="photo-1" src="Photos Export/Frame 1.png" />
   </div>
+  <div class="mosaic-photos-container">
+    <img class="mosaic-photo" id="photo-mosaic" src="Photos Mosaic Export/MosaicTogether.png" />
+  </div>
+  </div>
 
   <div class="scroll-block">
-    <!-- <div class="start-block"></div> -->
+    <div class="start-block">
+      <div class="title-text">Evergreen</div>
+    </div>
     <div class="time section-1">
       <div class="time-stamp">Today 9:59 PM</div>
       <div class="background">
@@ -379,7 +386,17 @@
           <div class="paragraph">Here's where it all began. </div>
         </div>
         <div class="message">
-          <div class="paragraph">Be a life-long learner. Be an evergreen. </div>
+          <div class="paragraph" id="last-paragraph">Be a life-long learner. Be an evergreen. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-18">
+
+      <!-- <div class="time-stamp">Jan 15, 2021 at 10:31 PM</div> -->
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">-- Dedicated to my grandpa</div>
         </div>
       </div>
     </div>
@@ -387,6 +404,8 @@
 
     <!-- <div class="end-block"></div> -->
   </div>
+
+  
 
   <!-- Load GSAP (Animation Library) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

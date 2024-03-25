@@ -75,11 +75,55 @@ document.addEventListener("DOMContentLoaded", () => {
                 duration: 5,
             }, "<")
 
+            // .addLabel("endLabel" + (index + 1), 3);
+
 
         timelines.push(timeline);
         console.log("added index " + index);
     });
 
+    timelines[13].to(".photos-container", {
+        filter: "grayscale(50%)",
+        scale: 1.05,
+        duration: 0.5,
+        repeat: 5,
+    }, ">")
+
+    timelines[14].to(".photos-container", {
+        filter: "grayscale(50%)",
+        scale: 1.2,
+        duration: 0.5,
+        repeat: 10,
+    }, ">")
+    timelines[14].to(".photos-container", {
+        filter: "grayscale(100%)",
+        scale: 1,
+        duration: 0.5,
+        repeat: 0,
+    }, ">")
+
+    timelines[15].to(".photos-container", {
+        filter: "grayscale(100%)",
+        opacity: 0,
+        scale: 0,
+        duration: 3,
+        delay: 2,
+        repeat: 0,
+    }, "<")
+    timelines[15].to(".photos-container", {
+        visibility: "hidden",
+        duration: 0.01,
+    }, )
+
+
+    timelines[16].to(".mosaic-photos-container", {
+        visibility: "visible",
+        duration: 0.01,
+    }, )
+    timelines[16].from(".mosaic-photos-container", {
+        opacity: 0,
+        duration: 1,
+    }, )
 
     // Define offset for the blurb
     // const xoffset = window.innerWidth * 0.28; 
