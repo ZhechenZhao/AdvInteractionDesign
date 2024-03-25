@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./vars.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto-Regular">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      appearance: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+  <title>Space And Time</title>
+</head>
+
+<body>
+
+  <div class="photos-container">
+    <img class="photo _10" id="photo-13" src="Photos Export/Frame 13.png" />
+    <img class="photo _02" id="photo-12" src="Photos Export/Frame 12.png" />
+    <img class="photo _03" id="photo-11" src="Photos Export/Frame 11.png" />
+    <img class="photo _04" id="photo-10" src="Photos Export/Frame 10.png" />
+    <img class="photo _05" id="photo-9" src="Photos Export/Frame 9.png" />
+    <img class="photo _06" id="photo-8" src="Photos Export/Frame 8.png" />
+    <img class="photo _07" id="photo-7" src="Photos Export/Frame 7.png" />
+    <img class="photo _08" id="photo-6" src="Photos Export/Frame 6.png" />
+    <img class="photo _09" id="photo-5" src="Photos Export/Frame 5.png" />
+    <img class="photo _14" id="photo-4" src="Photos Export/Frame 4.png" />
+    <img class="photo _11" id="photo-3" src="Photos Export/Frame 3.png" />
+    <img class="photo _12" id="photo-2" src="Photos Export/Frame 2.png" />
+    <img class="photo _13" id="photo-1" src="Photos Export/Frame 1.png" />
+  </div>
+
+  <div class="scroll-block">
+    <!-- <div class="start-block"></div> -->
+    <div class="time section-1">
+      <div class="time-stamp">Today 9:59 PM</div>
+      <div class="background">
+
+        <div class="message">
+          <div class="paragraph">Dear Grandpa</div>
+        </div>
+        <div class="message">
+          <div class="paragraph">I miss you.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="time section-2">
+      <div class="time-stamp">Thu, Feb 29 at 10:25 AM</div>
+      <div class="background">
+
+        <div class="message">
+          <div class="paragraph">
+            I wish I could show you <a href="https://openai.com/chatgpt">ChatGPT</a> and <a
+              href="https://www.apple.com/apple-vision-pro/">Apple Vision Pro</a>. I know it
+            sounds crazy, but I'm sure you will love them.
+          </div>
+        </div>
+        <div class="message">
+          <a href="https://openai.com/chatgpt">
+            <div class="card">
+              <div class="card-text">
+                <div class="card-description">
+                  <div class="card-title">ChatGPT</div>
+                  <div class="card-abstract">
+                    Get instant answers, find creative inspiration, learn
+                    something new.
+                  </div>
+                </div>
+                <div class="link">
+                  <img class="card-favicon" src="ChatGPT_Favicon.png" />
+                  <div class="card-link">
+                    https://openai.com/chatgpt
+                  </div>
+                </div>
+              </div>
+              <img class="card-img" src="ChatGPT_IMG.png" />
+            </div>
+          </a>
+          <a href="https://www.apple.com/apple-vision-pro/">
+            <div class="card">
+              <div class="card-text">
+                <div class="card-description">
+                  <div class="card-title">Apple Vision Pro</div>
+                  <div class="card-abstract">
+                    Apple Vision Pro is Apple's first spatial computer. It
+                    seamlessly blends digital content with your physical space
+                    using revolutionary technology.
+                  </div>
+                </div>
+                <div class="link">
+                  <img class="card-favicon" src="AppleVisionPro_Favicon.png" />
+                  <div class="card-link">
+                    https://www.apple.com/apple-vision-pro/
+                  </div>
+                </div>
+              </div>
+              <img class="card-img" src="AppleVisionPro_IMG.png" />
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="time section-3">
+
+      <div class="time-stamp">Jan 10, 2024 at 10:22 AM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">
+            Mom asked me if there's anything I wanted to tell you, and she would
+            let you know. Through burning paper I guess. It was the third year
+            your were not with us, and the third year I went to the U.S. for
+            college. She was in <span class="hoverable">Taiyuan</span> mourning for you.
+          </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">I didn't know what to say at the time.</div>
+        </div>
+        <div class="message">
+          <div class="paragraph">...</div>
+        </div>
+        <div class="blurb" id="b-taiyuan">Taiyuan, the capital of Shanxi Province, is where my grandpa lived and where
+          I was born.
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-4">
+
+      <div class="time-stamp">Jan 15, 2023 at 8:50 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">
+            You always said you were proud of me.
+          </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">
+            You said you are satisfied if you can watch all your grandchildren
+            go off to college. Well, I'm the youngest. But I failed your wish.
+            <span class="hoverable">Kind of</span>.
+          </div>
+
+        </div>
+        <div class="message">
+          <div class="paragraph">...</div>
+        </div>
+        <div class="blurb" id="b-kindof">I got accepted in December 2019, but I took a gap year
+          because of COVID. When I finally went to college in the fall of 2021, my grandpa has
+          passed away.
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-5">
+
+      <div class="time-stamp">May 16, 2022 at 4:19 AM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">I didn't know. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">My flight got cancelled two weeks before departure. I even booked the COVID test in New
+            York a month ago so that I could get on the plane. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-6">
+
+      <div class="time-stamp">Jan 15, 2022 at 11:09 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">It's been a year now. I wish I could go back to Taiyuan, but there are hardly any
+            flights between U.S. and China right now. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">I brought the family picture we took together to dorm and pinned it in front of my
+            desk. You can see the whole view of <span class="hoverable">South 40</span> from my window. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">Maybe I'll be able to go home for the summer. Hope they stop cancelling flights. </div>
+        </div>
+        <div class="blurb" id="b-south40">WashU's residential area where all freshmen live. </div>
+      </div>
+    </div>
+
+    <div class="time section-7">
+
+      <div class="time-stamp">Jan 17, 2021 at 10:16 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">I didn't know what to say when I was at <span class="hoverable">the funeral</span>
+            today. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">I could say things like how regretful I was that I didn't spend more time with you or
+            have more phone calls with you. But I know these are for myself, with hindsight. It's impossible for you to
+            hear. </div>
+        </div>
+        <div class="blurb" id="b-funeral">It was my first time attending a funeral. </div>
+      </div>
+    </div>
+
+    <div class="time section-8">
+
+      <div class="time-stamp">Jan 17, 2021 at 10:13 AM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">
+            With all the family relatives including people I've only met once, we drove to the mortuary in the suburb of
+            Taiyuan early in the morning when the sky was dim. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">
+            Cold air, eerie silence, and burning incense. Seeing the mortician wheel your body into the cremation room
+            was the final farewell. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">
+            Then there went the mourning ceremony. The atmosphere inevitably made my eyes wet. </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="time section-9">
+
+      <div class="time-stamp">Jan 16, 2021 at 11:38 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">As adult Pi said in Life of Pi (2012),
+            “in the end, the whole of life becomes an act of letting go, but what always hurts the most is not taking a
+            moment to say goodbye.” </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="time section-10">
+
+      <div class="time-stamp">Jan 16, 2021 at 10:07 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">
+            I didn't know the last goodbye was the Chinese New Year when everyone celebrated my acceptance to college.
+            It was the last time I met you and took picture with you. <span class="hoverable">I can't blame everything
+              on COVID.</span>
+          </div>
+        </div>
+        <div class="blurb" id="b-covid">I didn't go back to Taiyuan during my gap year. I have no excuse for having no
+          time. </div>
+      </div>
+    </div>
+
+    <div class="time section-11">
+
+      <div class="time-stamp">Jan 16, 2021 at 10:05 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">I don't remember what we talked to each other during that Chinese New Year. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">All I could recall was food. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">I miss the eight-treasure sticky rice you made every year. I miss the braised noodle
+            you made when you were in Beijing taking care of me during the summer. I miss your candied sweet potatoes. I
+            begged mom to make it. She said only you can make it perfect. You know I didn't like vegetables very much,
+            but I miss your steamed Chinese cabbage. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-12">
+
+      <div class="time-stamp">Jan 15, 2021 at 11:12 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">We were not prepared for it at all. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">Lying on the berth of the night train from Beijing to Taiyuan, I couldn't fall asleep. The train is arriving tomorrow morning. But I want time to freeze. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">Mom told me the grievous news when I got home from work. We booked tonight's tickets immediately. Aunt Changhong and Uncle Changlin are keeping vigil in Taiyuan. Among all the rides from Beijing to Taiyuan, this is the only time I don't want to go. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-13">
+
+      <div class="time-stamp">Jan 15, 2021 at 10:56 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">You were so prepared for it, years before it came. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">You packed everything tidy and folded clothes before you went to bed each day. You kept adding slides in your digital memoir “Evergreen” once in a while. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">One day, you asked me to write <span class="hoverable">elegiac couplets</span> for you. You came up with the words already. I could never imagine one day you will be gone at that time. </div>
+        </div>
+        <div class="blurb" id="b-elegiac">The couplets hanging at the door when the person in that house passes away. </div>
+      </div>
+    </div>
+
+    <div class="time section-14">
+
+      <div class="time-stamp">Jan 15, 2021 at 10:34 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">Born in 1934, you experienced a lot. From WWII to the dissolution of the Soviet Union. From famine to hybrid rice. From mail to email. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">Survived from suffocating in a tank of pig food and bombing from Japanese planes when you were a kid, you cherish living more than any of us for sure. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-15">
+
+      <div class="time-stamp">Jan 15, 2021 at 10:31 PM</div>
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">I want to be brave like you. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">I want to be open-minded like you when I'm old. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-16">
+
+      <!-- <div class="time-stamp">Jan 15, 2021 at 10:31 PM</div> -->
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">“辰辰, can you teach me how to make that?” You asked, looking at the slideshow I made documenting our trip to Lijiang, Yunnan in the winter of 2010. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">You said you wanted to put together a memoir with pictures and music. I was happy to be a teacher, and you were happy to be a student. </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time section-17">
+
+      <!-- <div class="time-stamp">Jan 15, 2021 at 10:31 PM</div> -->
+      <div class="background">
+        <div class="message">
+          <div class="paragraph">Here's where it all began. </div>
+        </div>
+        <div class="message">
+          <div class="paragraph">Be a life-long learner. Be an evergreen. </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="end-block"></div> -->
+  </div>
+
+  <!-- Load GSAP (Animation Library) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- Load the scroll library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Load my javascript -->
+  <script src="index2.js"></script>
+</body>
+
+</html>

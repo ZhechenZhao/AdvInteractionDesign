@@ -1,0 +1,372 @@
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 0%;
+}
+
+.paragraph a {
+  color: black;
+  text-decoration: underline;
+}
+
+.scroll-block {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 30000px;
+}
+
+.memory-lane,
+.memory-lane * {
+  box-sizing: border-box;
+}
+
+.memory-lane {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  flex-shrink: 0;
+  position: relative;
+}
+
+.time-stamp {
+  margin-top: 25%;
+  color: var(--gray-3, #c2c2c2);
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--timestamp-font-size, 15px);
+  line-height: var(--timestamp-line-height);
+  font-weight: var(--timestamp-font-weight, 400);
+  position: relative;
+  width: 640px;
+}
+
+
+.paragraph {
+  color: #000000;
+  text-align: left;
+  font-family: "Merriweather", serif;
+  font-size: var(--paragraph-font-size, 16px);
+  line-height: var(--paragraph-line-height, 30px);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  width: 640px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--gray-1, #333333);
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 640px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 400px;
+  position: relative;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.card-title {
+  color: var(--gray-1, #333333);
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--card-title-font-size, 16px);
+  line-height: var(--card-title-line-height, 24px);
+  font-weight: var(--card-title-font-weight, 400);
+  position: relative;
+}
+
+.card-abstract {
+  color: var(--gray-2, #4f4f4f);
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--card-abstract-font-size, 11px);
+  line-height: var(--card-abstract-line-height, 18px);
+  font-weight: var(--card-abstract-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  height: 36px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.card-link {
+  color: var(--gray-1, #333333);
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--card-link-font-size, 12px);
+  line-height: var(--card-link-line-height, 24px);
+  font-weight: var(--card-link-font-weight, 400);
+  position: relative;
+}
+
+.card-favicon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  object-fit: cover;
+}
+
+.card-img {
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 240px;
+  position: relative;
+  object-fit: cover;
+}
+
+.photo {
+  visibility: hidden;
+}
+
+.start-block {
+  width: 100%;
+  height: 0vh;
+}
+
+.end-block {
+  width: 100%;
+  height: 2000px;
+}
+
+
+.section-2 {
+  visibility: hidden;
+}
+
+.section-3 {
+  visibility: hidden;
+}
+
+
+
+.blurb {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  padding-left: 8px;
+  border-top: 1px solid black;
+  border-radius: 0px;
+  overflow: visible;
+  font-family: "Bitter", serif;
+  font-size: var(--paragraph-font-size, 14px);
+  line-height: var(--paragraph-line-height, 20px);
+  font-weight: var(--paragraph-font-weight, 300);
+  width: 640px;
+  bottom: 150px;
+}
+
+.hoverable {
+  color: #828282;
+  text-decoration: wavy underline;
+  cursor: pointer;
+}
+
+#b-taiyuan {
+  /* width: 320px; */
+  /* white-space: nowrap; */
+}
+
+#b-kindof {
+  /* width: 320px; */
+  /* white-space: nowrap; */
+}
+
+
+.photos-container,
+.photos-container * {
+  box-sizing: border-box;
+}
+.photos-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 457px;
+  width: 530px;
+  position: absolute;
+  top: 0px;
+  left: 8vw;
+}
+._10 {
+  width: 74.69px;
+  height: 100px;
+  position: absolute;
+  left: 423px;
+  top: 339px;
+  object-fit: cover;
+}
+._02 {
+  width: 85px;
+  height: 67px;
+  position: absolute;
+  left: 0px;
+  top: 158px;
+  object-fit: cover;
+}
+._03 {
+  width: 135px;
+  height: 176px;
+  position: absolute;
+  left: 256px;
+  top: 153px;
+  object-fit: cover;
+}
+._04 {
+  width: 129px;
+  height: 109px;
+  position: absolute;
+  left: 401px;
+  top: 220px;
+  object-fit: cover;
+}
+._05 {
+  width: 133.33px;
+  height: 100px;
+  position: absolute;
+  left: 257px;
+  top: 43px;
+  object-fit: cover;
+}
+._06 {
+  width: 142px;
+  height: 94px;
+  position: absolute;
+  left: 28px;
+  top: 235px;
+  object-fit: cover;
+}
+._07 {
+  width: 105px;
+  height: 72px;
+  position: absolute;
+  left: 1px;
+  top: 339px;
+  object-fit: cover;
+}
+._08 {
+  width: 150.56px;
+  height: 100px;
+  position: absolute;
+  left: 95px;
+  top: 125px;
+  object-fit: cover;
+}
+._09 {
+  width: 66.28px;
+  height: 94px;
+  position: absolute;
+  left: 180px;
+  top: 235px;
+  object-fit: cover;
+}
+._14 {
+  width: 173px;
+  height: 115px;
+  position: absolute;
+  left: 73px;
+  top: 0px;
+  object-fit: cover;
+}
+._11 {
+  width: 108px;
+  height: 80px;
+  position: absolute;
+  left: 401px;
+  top: 130px;
+  object-fit: cover;
+}
+._12 {
+  width: 130px;
+  height: 97px;
+  position: absolute;
+  left: 116px;
+  top: 339px;
+  object-fit: cover;
+}
+._13 {
+  width: 157px;
+  height: 118px;
+  position: absolute;
+  left: 256px;
+  top: 339px;
+  object-fit: cover;
+}
