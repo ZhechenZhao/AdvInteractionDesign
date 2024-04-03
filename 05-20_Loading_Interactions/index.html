@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Charrette</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="overall">
+        <div class="pagetitle">20 Loading Interactions</div>
+        <div class="container">
+            <div class="block">
+                <div class="frame" id="frame1">
+                    <div class="svg-container">
+                        <svg width=100% height=100% xmlns="http://www.w3.org/2000/svg" id="block1-svg"
+                            viewBox="0 0 520.22 225.74" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
+                            <defs>
+                                <mask id="svg-mask1" x="0" y="0" width="100%" height="100%" >
+                                    <path
+                                        d="M260.11,0C148.89,0,51.81,60.52,0,150.43l129.79,74.88c25.96-44.73,74.37-74.81,129.82-74.81s104.17,30.27,130.07,75.24l130.54-75.31C468.41,60.52,371.33,0,260.11,0Z"
+                                        fill="white" />
+                                </mask>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <img class="image1" src="image1.jpg" alt="Image 1" id="image1">
+                    <img class="windshield-wiper" src="windshield wiper.png" id="windshield-wiper1">
+                </div>
+                <div class="panel" id="panel1">
+                    <p class="title">Windshield wiper</p>
+                    <p class="note">You will break it if you click during the movement</p>
+                    <!-- Reveal the outside as the windshield activates -->
+                    <button class="load-btn" id="btn1">Activate windshield wiper</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame2">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="Snow1.png" id="Snow1">
+                    <img src="Snow2.png" id="Snow2">
+                    <img src="Snow3.png" id="Snow3">
+                    <img src="Snow4.png" id="Snow4">
+                    <img src="Shovel1.png" id="Shovel1">
+                    <img src="Shovel2.png" id="Shovel2">
+                    <img src="Shovel3.png" id="Shovel3">
+                    <img src="Shovel4.png" id="Shovel4">
+                </div>
+                <div class="panel" id="panel2">
+                    <p class="title">Snow removal</p>
+                    <!-- Clean the dirt on image -->
+                    <button class="load-btn" id="btn2">Clean snow</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame3">
+                    <div class="blur"></div>
+                    <img src="image3.gif" alt="Image 3">
+                </div>
+                <div class="panel" id="panel3">
+                    <p class="title">Apple</p>
+                    <p class="note">The page will reload when you get to 100% clear</p>
+                    <!-- Load Apple logo with the launching sound -->
+                    <button class="load-btn" id="btn3">Load Apple</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame4">
+                    <img src="image4.gif" alt="Image 4">
+                </div>
+                <div class="panel" id="panel4">
+                    <p class="title">REAL apple</p>
+                    <p class="note">It will reset to initial state when it reaches full size</p>
+                    <!-- Load real apple, and take a bite -->
+                    <button class="load-btn" id="btn4">Load apple</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame5">
+                    <img src="image5.png" alt="Image 5">
+                    <img src="deserted city.png" id="deserted-city">
+                    <img src="walle walking.gif" id="walle-walking">
+                </div>
+                <div class="panel" id="panel5">
+                    <p class="title">WALL•E</p>
+                    <button class="load-btn" id="btn5">Wall-EEEE</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame6">
+                    <img src="angrybirds_BG.png" alt="Image 6">
+                    <img src="angrybirds_Slingshot_Below.png" id="AB-slingshot-below">
+                    <img src="angrybirds_Red.png" id="AB-bird-red">
+                    <img src="angrybirds_Yellow.png" id="AB-bird-yellow">
+                    <img src="angrybirds_Black.png" id="AB-bird-black">
+                    <img src="angrybirds_Slingshot_Above.png" id="AB-slingshot-above">
+
+
+                </div>
+                <div class="panel" id="panel6">
+                    <p class="title">Angry Birds</p>
+                    <p class="note">It has a bug that if you click fast enough, you can load all of them at once</p>
+                    <!-- a bird hopping onto the slingshot each time -->
+                    <button class="load-btn" id="btn6">Load an angry bird</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame7">
+                    <img src="image7.jpg" alt="Image 7">
+                    <img src="Black.png" id="black-layer">
+                </div>
+                <div class="panel" id="panel7">
+                    <p class="title">Low battery</p>
+                    <!-- load image as low battery not the full brightness -->
+                    <button class="load-btn" id="btn7">Load display</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame8">
+                    <img src="image8-1.png" alt="Image 8-1">
+                    <img src="image8-2.png" alt="Image 8-2">
+                    <img src="image8-3.png" alt="Image 8-3">
+                    <img src="image8-4.png" alt="Image 8-4">
+                </div>
+                <div class="panel" id="panel8">
+                    <p class="title">Houses of Parliament (Monet)</p>
+                    <!-- load different images during the day through window blinds? -->
+                    <div id="block8-btn">
+                        <button class="load-btn" id="btn8-1">Load the sun (6:00AM)</button>
+                        <button class="load-btn" id="btn8-2">Load the sun (10:00AM)</button>
+                        <button class="load-btn" id="btn8-3">Load the sun (2:00PM)</button>
+                        <button class="load-btn" id="btn8-4">Load the sun (6:00PM)</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame9">
+                    <img src="image9_1.jpg" alt="Image 9">
+                    <img src="image9_2.jpg" alt="Image 9">
+                    <img src="image9_3.jpg" alt="Image 9">
+                    <img src="image9_4.jpg" alt="Image 9">
+                    <img src="image9_5.jpg" alt="Image 9">
+                    <img src="image9_6.jpg" alt="Image 9">
+                    <img src="image9_7.jpg" alt="Image 9">
+                    <img src="image9_8.jpg" alt="Image 9">
+                    <img src="image9_9.jpg" alt="Image 9">
+                    <img src="image9_10.jpg" alt="Image 9">
+                    <img src="image9_11.jpg" alt="Image 9">
+                </div>
+                <div class="panel" id="panel9">
+                    <p class="title">Wreck It Ralph</p>
+                    <!-- Peep through to see the image, but a little bit each time -->
+                    <button class="load-btn" id="btn9">Loading</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame10">
+                    <img src="image10.jpg" alt="Image 10">
+                </div>
+                <div class="panel" id="panel10">
+                    <p class="title">Machine learning</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <!-- Load a train image as the training process, trying to learn what is a train -->
+                    <button class="load-btn" id="btn10">Train</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame11">
+                    <img src="image11.jpg" alt="Image 11">
+                </div>
+                <div class="panel" id="panel11">
+                    <p class="title">Binary</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn11">Load Image</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame12">
+                    <img src="image12.jpg" alt="Image 12">
+                </div>
+                <div class="panel" id="panel12">
+                    <p class="title">ASCII</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn12">Load Image</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame13">
+                    <img src="image13.jpg" alt="Image 13">
+                </div>
+                <div class="panel" id="panel13">
+                    <p class="title">Emoji</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn13">Load Image</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame14">
+                    <img src="image14.jpg" alt="Image 14">
+                </div>
+                <div class="panel" id="panel14">
+                    <p class="title">Tesla door handle</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <!-- 1st click the button changes to "Pull me", 2nd click loads the image of the interior of the car -->
+                    <button class="load-btn" id="btn14">Open the door</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame15">
+                    <img src="image15.png" alt="Image 15">
+                    <img src="minecraft.jpg" id="minecraft">
+                </div>
+                <div class="panel" id="panel15">
+                    <p class="title">Minecraft</p>
+                    <!-- BOOOOOM -->
+                    <!-- Load "You Died!" screen with "Steve was blown up by creeper" -->
+                    <button class="load-btn" id="btn15">ssssss... *creeper sound*</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame16">
+                    <img src="image16.jpg" alt="Image 16">
+                </div>
+                <div class="panel" id="panel16">
+                    <p class="title">Cassette player</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn16">Load tape</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame17">
+                    <img src="image17.jpg" alt="Image 17">
+                </div>
+                <div class="panel" id="panel17">
+                    <p class="title">Phonograph</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn17">Load disc</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame18">
+                    <img src="image18.jpg" alt="Image 18">
+                </div>
+                <div class="panel" id="panel18">
+                    <p class="title">Phenakistiscope</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn18">Load motion</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame19">
+                    <img src="image19.jpg" alt="Image 19">
+                </div>
+                <div class="panel" id="panel19">
+                    <p class="title">Movie projector</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn19">Load film</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frame" id="frame20">
+                    <img src="image20.png" alt="Image 20">
+                </div>
+                <div class="panel" id="panel20">
+                    <p class="title">Browser</p>
+                    <p class="note">UNDER CONSTRUCTION</p>
+                    <button class="load-btn" id="btn20">Load webpage</button>
+                </div>
+            </div>
+            <!-- Add more blocks here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
