@@ -1,0 +1,395 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    padding: 8px 16px;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #028c9e;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease; /* Transition for opacity change */
+}
+
+.back-button:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.back-button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.next-series-button {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    padding: 8px 16px;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #028c9e;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease; /* Transition for opacity change */
+}
+
+.next-series-button:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.next-series-button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.previous-series-button {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    padding: 8px 16px;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #028c9e;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease; /* Transition for opacity change */
+}
+
+.previous-series-button:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.previous-series-button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+
+
+.paintings-container {
+    /* display: flex;
+    flex-direction: column;
+    width: 60vw;
+    position: relative; */
+    display: hidden;
+
+    height: 80vh;
+    aspect-ratio: 1;
+    position: absolute;
+    overflow: visible;
+
+    opacity: 0;
+}
+
+.painting-container {
+    width: 100%;
+    height: 94%;
+    padding-top: 20px;
+    position: absolute;
+}
+
+
+
+.painting-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    bottom: 0px;
+}
+
+.painting-title {
+    position: relative;
+    font-size: 24px;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.painting-date {
+    position: relative;
+    font-size: 20px;
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.painting-museum {
+    position: relative;
+    font-size: 16px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 8px;
+}
+
+.painting-museum-location {
+    position: relative;
+    font-size: 16px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    opacity: .5;
+}
+
+.painting {
+    position: absolute;
+    width: 100%;
+    height: 76%;
+    object-fit: cover;
+    border-radius: 8px;
+    /* mix-blend-mode: multiply;
+    opacity: .4; */
+}
+
+#img01 {
+    object-position: 0%;
+}
+
+#img02 {
+    object-position: 9.09%;
+}
+
+#img03 {
+    object-position: 18.18%;
+}
+
+#img04 {
+    object-position: 27.27%;
+}
+
+#img05 {
+    object-position: 36.36%;
+}
+
+#img06 {
+    object-position: 45.45%;
+}
+
+#img07 {
+    object-position: 54.55%;
+}
+
+#img08 {
+    object-position: 63.64%;
+}
+
+#img09 {
+    object-position: 72.73%;
+}
+
+#img10 {
+    object-position: 81.82%;
+}
+
+#img11 {
+    object-position: 90.91%;
+}
+
+#img12 {
+    object-position: 100%;
+}
+
+.description-container {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+.hint {
+    position: relative;
+    font-size: 16px;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.2;
+}
+
+.title-section {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: auto;
+}
+
+.number {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 20px 0px;
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 12%;
+}
+
+.series-title {
+    position: relative;
+    padding: 40px;
+    font-size: 36px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quote-container {
+    width: 60vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.quote {
+    position: relative;
+    width: 86%;
+
+    font-size: 20px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quotation-mark {
+    position: absolute;
+    font-size: 160px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 10%;
+}
+
+#left-quotation {
+    top: 0px;
+    left: 0px;
+    translate: 40px 0px;
+}
+
+#right-quotation {
+    top: 0px;
+    right: 0px;
+    translate: -40px 0px;
+}
+
+.map-container {
+    width: 60vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+
+.loading-container {
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+}
+
+.loader {
+    width: 0;
+    height: 10px;
+    border-radius: 0px 2px 2px 0px;
+    display: inline-block;
+    position: relative;
+    background: #028c9e;
+    box-shadow: 0 0 12px rgba(192, 248, 252, 0.8);
+    box-sizing: border-box;
+    animation: animFw 6s linear forwards;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    width: 10px;
+    height: 1px;
+    background: #e0feff;
+    position: absolute;
+    top: 9px;
+    right: -2px;
+    opacity: 0;
+    transform: rotate(-45deg) translateX(0px);
+    box-sizing: border-box;
+    animation: coli1 0.3s linear infinite;
+}
+
+.loader::before {
+    top: -4px;
+    transform: rotate(45deg);
+    animation: coli2 0.3s linear infinite;
+}
+
+@keyframes animFw {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes coli1 {
+    0% {
+        transform: rotate(-45deg) translateX(0px);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: rotate(-45deg) translateX(-45px);
+        opacity: 0;
+    }
+}
+
+@keyframes coli2 {
+    0% {
+        transform: rotate(45deg) translateX(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(45deg) translateX(-45px);
+        opacity: 0.7;
+    }
+}
