@@ -174,18 +174,42 @@ body {
 }
 
 #img02 {
-    object-position: 25%;
+    object-position: 10%;
 }
 
 #img03 {
-    object-position: 50%;
+    object-position: 20%;
 }
 
 #img04 {
-    object-position: 75%;
+    object-position: 30%;
 }
 
 #img05 {
+    object-position: 40%;
+}
+
+#img06 {
+    object-position: 50%;
+}
+
+#img07 {
+    object-position: 60%;
+}
+
+#img08 {
+    object-position: 70%;
+}
+
+#img09 {
+    object-position: 80%;
+}
+
+#img10 {
+    object-position: 90%;
+}
+
+#img11 {
     object-position: 100%;
 }
 

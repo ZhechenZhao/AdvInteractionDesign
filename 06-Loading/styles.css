@@ -56,7 +56,7 @@ body {
     color: white;
     font-size: 14px;
     font-family: "Crete Round", serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
 
     -webkit-text-stroke-width: 0px;
@@ -65,7 +65,7 @@ body {
 }
 
 /* Position each circle evenly around the container */
-.circle:nth-child(3) { transform:  rotate(0deg) translate(240px) rotate(-0deg); }
+/* .circle:nth-child(3) { transform:  rotate(0deg) translate(240px) rotate(-0deg); }
 .circle:nth-child(4) { transform:  rotate(30deg) translate(240px) rotate(-30deg); }
 .circle:nth-child(5) { transform:  rotate(60deg) translate(240px) rotate(-60deg); }
 .circle:nth-child(6) { transform:  rotate(90deg) translate(240px) rotate(-90deg); }
@@ -76,7 +76,17 @@ body {
 .circle:nth-child(11) { transform:  rotate(240deg) translate(240px) rotate(-240deg); }
 .circle:nth-child(12) { transform:  rotate(270deg) translate(240px) rotate(-270deg); }
 .circle:nth-child(1) { transform:  rotate(300deg) translate(240px) rotate(-300deg); }
-.circle:nth-child(2) { transform:  rotate(330deg) translate(240px) rotate(-330deg); }
+.circle:nth-child(2) { transform:  rotate(330deg) translate(240px) rotate(-330deg); } */
+.circle:nth-child(3) { transform:  rotate(0deg) translate(240px) rotate(-0deg); }
+.circle:nth-child(4) { transform:  rotate(36deg) translate(240px) rotate(-36deg); }
+.circle:nth-child(5) { transform:  rotate(72deg) translate(240px) rotate(-72deg); }
+.circle:nth-child(6) { transform:  rotate(108deg) translate(240px) rotate(-108deg); }
+.circle:nth-child(7) { transform:  rotate(144deg) translate(240px) rotate(-144deg); }
+.circle:nth-child(8) { transform:  rotate(180deg) translate(240px) rotate(-180deg); }
+.circle:nth-child(9) { transform:  rotate(216deg) translate(240px) rotate(-216deg); }
+.circle:nth-child(10) { transform:  rotate(252deg) translate(240px) rotate(-252deg); }
+.circle:nth-child(1) { transform:  rotate(288deg) translate(240px) rotate(-288deg); }
+.circle:nth-child(2) { transform:  rotate(324deg) translate(240px) rotate(-324deg); }
 
 /* Hover effect */
 .circle:hover {
@@ -88,11 +98,11 @@ body {
 #circle2 { background-image: url('img_vetheuil/1933.1161\ -\ Vétheuil.jpg'); }
 #circle3 { background-image: url('img_thames_bridge/Charing\ Cross\ Bridge\ Fog\ on\ the\ Thames_1903.png');}
 #circle4 { background-image: url('img_stacks_of_wheat/Grainstacks_1890.png'); }
-#circle5 { background-image: url('img_sainte_adresse/1933.439\ -\ The\ Beach\ at\ Sainte-Adresse.jpg'); }
+#circle5 { background-image: url('img_saint_lazare/1336px-Claude_Monet_-_The_Gare_Saint-Lazare\,_Arrival_of_a_Train.jpg'); }
 #circle6 { background-image: url('img_rouen_cathedral/Rouen\ Cathedral\,\ Sunlight_1894_NGA-DC.png'); }
 #circle7 { background-image: url('img_pourville_cliff/Cliffs\ at\ Pourville_1882.png'); }
 #circle8 { background-image: url('img_poplars/Poplars\ at\ Giverny_1887.png'); }
-#circle9 { background-image: url('img_morning_haze/morning_haze_1888.jpg'); }
+#circle9 { background-image: url('img_japanese_bridge/1933.441\ -\ Water\ Lily\ Pond.jpg'); }
 #circle10 { background-image: url('img_houses_of_parliament/image8-1.jpg'); }
 #circle11 { background-image: url('img_etretat_cliff/Regnvær\,\ Etretat_1886.png'); }
 #circle12 { background-image: url('img_etretat_boats/1922.428\ -\ The\ Departure\ of\ the\ Boats\,\ Étretat.jpg'); }

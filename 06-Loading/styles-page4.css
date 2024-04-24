@@ -174,21 +174,76 @@ body {
 }
 
 #img02 {
-    object-position: 25%;
+    object-position: 5.56%;
 }
 
 #img03 {
-    object-position: 50%;
+    object-position: 11.11%;
 }
 
 #img04 {
-    object-position: 75%;
+    object-position: 16.67%;
 }
 
 #img05 {
-    object-position: 100%;
+    object-position: 22.22%;
 }
 
+#img06 {
+    object-position: 27.78%;
+}
+
+#img07 {
+    object-position: 33.33%;
+}
+
+#img08 {
+    object-position: 38.89%;
+}
+
+#img09 {
+    object-position: 44.44%;
+}
+
+#img10 {
+    object-position: 50%;
+}
+
+#img11 {
+    object-position: 55.55%;
+}
+
+#img12 {
+    object-position: 61.11%;
+}
+
+#img13 {
+    object-position: 66.67%;
+}
+
+#img14 {
+    object-position: 72.22%;
+}
+
+#img15 {
+    object-position: 77.78%;
+}
+
+#img16 {
+    object-position: 83.33%;
+}
+
+#img17 {
+    object-position: 88.89%;
+}
+
+#img18 {
+    object-position: 94.44%;
+}
+
+#img19 {
+    object-position: 100%;
+}
 
 .description-container {
     position: absolute;

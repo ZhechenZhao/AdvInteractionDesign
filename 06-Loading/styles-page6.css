@@ -99,7 +99,7 @@ body {
     display: hidden;
 
     height: 80vh;
-    aspect-ratio: 1;
+    aspect-ratio: 0.54;
     position: absolute;
     overflow: visible;
 
@@ -110,6 +110,7 @@ body {
     width: 100%;
     height: 94%;
     padding-top: 20px;
+    padding-bottom: 40px;
     position: absolute;
 }
 
@@ -119,8 +120,9 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
+    width: 50%;
     height: auto;
-    bottom: 0px;
+    left: 110%;
 }
 
 .painting-title {
@@ -137,6 +139,8 @@ body {
     font-family: "Georgia", serif;
     font-weight: 400;
     font-style: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .painting-museum {
@@ -162,7 +166,7 @@ body {
 .painting {
     position: absolute;
     width: 100%;
-    height: 76%;
+    height: 82%;
     object-fit: cover;
     border-radius: 8px;
     /* mix-blend-mode: multiply;
@@ -174,21 +178,40 @@ body {
 }
 
 #img02 {
-    object-position: 25%;
+    object-position: 11.11%;
 }
 
 #img03 {
-    object-position: 50%;
+    object-position: 22.22%;
 }
 
 #img04 {
-    object-position: 75%;
+    object-position: 33.33%;
 }
 
 #img05 {
-    object-position: 100%;
+    object-position: 44.44%;
 }
 
+#img06 {
+    object-position: 55.56%;
+}
+
+#img07 {
+    object-position: 66.67%;
+}
+
+#img08 {
+    object-position: 77.78%;
+}
+
+#img09 {
+    object-position: 88.89%;
+}
+
+#img10 {
+    object-position: 100%;
+}
 
 .description-container {
     position: absolute;

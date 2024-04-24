@@ -174,18 +174,14 @@ body {
 }
 
 #img02 {
-    object-position: 25%;
+    object-position: 33.33%;
 }
 
 #img03 {
-    object-position: 50%;
+    object-position: 66.66%;
 }
 
 #img04 {
-    object-position: 75%;
-}
-
-#img05 {
     object-position: 100%;
 }
 

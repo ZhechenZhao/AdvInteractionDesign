@@ -281,6 +281,19 @@ body {
     font-style: normal;
 }
 
+.quote-name {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    translate: -120px 0px;
+
+    font-size: 20px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 80%;
+}
+
 .quotation-mark {
     position: absolute;
     font-size: 160px;

@@ -4,64 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading Haystacks</title>
-    <link rel="stylesheet" href="styles-page1.css">
+    <link rel="stylesheet" href="styles-page4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round:ital@0;1&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round:ital@0;1&family=Parisienne&family=Patua+One&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="backButton" class="back-button">↞ Gallery</button>
+    <button id="nextSeriesButton" class="next-series-button">Next Series ›</button>
+    <button id="previousSeriesButton" class="previous-series-button">‹ Previous Series</button>
     <div class="container">
-        <!-- Create 12 divs for the circle -->
-        <div class="circle" id="circle1">
-            <div class="number">1</div>
-            <div class="series-title" id="s-t-1">Waterloo Bridge</div>
-        </div>
-        <div class="circle" id="circle2">
-            <div class="number">2</div>
-            <div class="series-title" id="s-t-1">Vétheuil</div>
-        </div>
-        <div class="circle" id="circle3">
-            <div class="number">3</div>
-            <div class="series-title" id="s-t-1">River Thames</div>
-        </div>
-        <div class="circle" id="circle4">
+        
+        <div class="title-section">
             <div class="number">4</div>
             <div class="series-title" id="s-t-1">Haystacks</div>
         </div>
-        <div class="circle" id="circle5">
-            <div class="number">5</div>
-            <div class="series-title" id="s-t-1">Sainte-Adresse</div>
+
+        <div class="map-container">
+            <div class="loading-container">
+                <span class="loader"></span>
+            </div>
+            <img class="map" src="maps/04.png">
+            
         </div>
-        <div class="circle" id="circle6">
-            <div class="number">6</div>
-            <div class="series-title" id="s-t-1">Rouen Cathedral</div>
+        
+
+        <div class="quote-container">
+            <div class="quotation-mark" id="left-quotation">“</div>
+            <div class="quote">
+                For me, a landscape does not exist in its own right, since its appearance changes at every moment.
+            </div>
+            <div class="quote-name">———— Claude Monet</div>
+            <div class="quotation-mark" id="right-quotation">”</div>
         </div>
-        <div class="circle" id="circle7">
-            <div class="number">7</div>
-            <div class="series-title" id="s-t-1">Pourville Cliffs</div>
+
+        <div class="description-container">
+            <div class="hint">Hover to view the whole painting</div>
         </div>
-        <div class="circle" id="circle8">
-            <div class="number">8</div>
-            <div class="series-title" id="s-t-1">Poplars</div>
+        
+        <div class="paintings-container">
+            <div class="painting-container" id="p01">
+                <img class="painting" id="img01" src="img_stacks_of_wheat/Grainstacks, White Frost Effect_1889_Farmington.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstacks, White Frost Effect</div>
+                    <div class="painting-date">1889</div>
+                    <div class="painting-museum">Hill-Stead Museum</div>
+                    <div class="painting-museum-location">Farmington, United States</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p02">
+                <img class="painting" id="img02" src="img_stacks_of_wheat/1985.1103 - Stacks of Wheat (End of Summer).jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Stacks of Wheat (End of Summer)</div>
+                    <div class="painting-date">1890/1891</div>
+                    <div class="painting-museum">The Art Institute of Chicago</div>
+                    <div class="painting-museum-location">Chicago, United States</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p03">
+                <img class="painting" id="img03" src="img_stacks_of_wheat/1933.444 - Stacks of Wheat (End of Day, Autumn).jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Stacks of Wheat (End of Day, Autumn)</div>
+                    <div class="painting-date">1890/1891</div>
+                    <div class="painting-museum">The Art Institute of Chicago</div>
+                    <div class="painting-museum-location">Chicago, United States</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p04">
+                <img class="painting" id="img04" src="img_stacks_of_wheat/1983.166 - Stack of Wheat (Thaw, Sunset).jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Stack of Wheat (Thaw, Sunset)</div>
+                    <div class="painting-date">1890/1891</div>
+                    <div class="painting-museum">The Art Institute of Chicago</div>
+                    <div class="painting-museum-location">Chicago, United States</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p05">
+                <img class="painting" id="img05" src="img_stacks_of_wheat/1983.29 - Stack of Wheat.jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Stack of Wheat</div>
+                    <div class="painting-date">1890/1891</div>
+                    <div class="painting-museum">The Art Institute of Chicago</div>
+                    <div class="painting-museum-location">Chicago, United States</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p06">
+                <img class="painting" id="img06" src="img_stacks_of_wheat/1933.1155 - Stack of Wheat (Snow Effect, Overcast Day).jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Stack of Wheat (Snow Effect, Overcast Day)</div>
+                    <div class="painting-date">1890/1891</div>
+                    <div class="painting-museum">The Art Institute of Chicago</div>
+                    <div class="painting-museum-location">Chicago, United States</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p07">
+                <img class="painting" id="img07" src="img_stacks_of_wheat/Grainstacks_1890.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstacks</div>
+                    <div class="painting-date">1890</div>
+                    <div class="painting-museum">Museum Barberini</div>
+                    <div class="painting-museum-location">Potsdam, Germany</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p08">
+                <img class="painting" id="img08" src="img_stacks_of_wheat/Grainstacks at Giverny; the Evening Sun.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstacks at Giverny; the Evening Sun</div>
+                    <div class="painting-date">1888/1889</div>
+                    <div class="painting-museum">The Museum of Modern Art, Saitama</div>
+                    <div class="painting-museum-location">Saitama, Japan</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p09">
+                <img class="painting" id="img09" src="img_stacks_of_wheat/Grainstack, Sun in the Mist_1891_Minneapolis.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstack, Sun in the Mist</div>
+                    <div class="painting-date">1891</div>
+                    <div class="painting-museum">Minneapolis Institute of Art</div>
+                    <div class="painting-museum-location">Minneapolis, United States</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p10">
+                <img class="painting" id="img10" src="img_stacks_of_wheat/Haystacks, Snow Effect_1891_Edinburgh.png">
+                <div class="painting-info">
+                    <div class="painting-title">Haystacks: Snow Effect</div>
+                    <div class="painting-date">1891</div>
+                    <div class="painting-museum">National Galleries Scotland: National</div>
+                    <div class="painting-museum-location">Edinburgh, United Kingdom</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p11">
+                <img class="painting" id="img11" src="img_stacks_of_wheat/Grainstack in the Sunlight, Snow Effect_1891_Potsdam.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstack in the Sunlight, Snow Effect</div>
+                    <div class="painting-date">1891</div>
+                    <div class="painting-museum">Museum Barberini</div>
+                    <div class="painting-museum-location">Potsdam, Germany</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p12">
+                <img class="painting" id="img12" src="img_stacks_of_wheat/Wheatstacks, Snow Effect, Morning_1891.jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Wheatstacks, Snow Effect, Morning (Meules, Effet de Neige, Le Matin)</div>
+                    <div class="painting-date">1891</div>
+                    <div class="painting-museum">The J. Paul Getty Museum</div>
+                    <div class="painting-museum-location">Los Angeles, United States</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p13">
+                <img class="painting" id="img13" src="img_stacks_of_wheat/Grainstack in Sunlight_1891_Zurich.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstack in Sunlight</div>
+                    <div class="painting-date">1891</div>
+                    <div class="painting-museum">Kunsthaus Zürich</div>
+                    <div class="painting-museum-location">Zürich, Switzerland</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p14">
+                <img class="painting" id="img14" src="img_stacks_of_wheat/Haystacks, end of Summer_1891_Paris.png">
+                <div class="painting-info">
+                    <div class="painting-title">Haystacks, end of Summer</div>
+                    <div class="painting-date">1891</div>
+                    <div class="painting-museum">Musée d’Orsay, Paris</div>
+                    <div class="painting-museum-location">Paris, France</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p15">
+                <img class="painting" id="img15" src="img_stacks_of_wheat/Grainstacks in Bright Sunlight_1890_Farmington.png">
+                <div class="painting-info">
+                    <div class="painting-title">Grainstacks in Bright Sunlight</div>
+                    <div class="painting-date">1890</div>
+                    <div class="painting-museum">Hill-Stead Museum</div>
+                    <div class="painting-museum-location">Farmington, United States</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p16">
+                <img class="painting" id="img16" src="img_stacks_of_wheat/Haystacks_1885_Japan.png">
+                <div class="painting-info">
+                    <div class="painting-title">Haystacks</div>
+                    <div class="painting-date">1885</div>
+                    <div class="painting-museum">Ohara Museum of Art</div>
+                    <div class="painting-museum-location">Kurashiki, Japan</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p17">
+                <img class="painting" id="img17" src="img_stacks_of_wheat/Meules, milieu du jour [Haystacks, midday]_1890_Canberra.png">
+                <div class="painting-info">
+                    <div class="painting-title">Meules, milieu du jour [Haystacks, midday]</div>
+                    <div class="painting-date">1890</div>
+                    <div class="painting-museum">National Gallery of Australia</div>
+                    <div class="painting-museum-location">Parkes, Australia</div>
+                </div>
+            </div>
+
+            <div class="painting-container" id="p18">
+                <img class="painting" id="img18" src="img_stacks_of_wheat/The Young Ladies of Giverny, Sun Effect_1894.png">
+                <div class="painting-info">
+                    <div class="painting-title">The Young Ladies of Giverny, Sun Effect</div>
+                    <div class="painting-date">1894</div>
+                    <div class="painting-museum">The Israel Museum, Jerusalem</div>
+                    <div class="painting-museum-location">Jerusalem, Israel</div>
+                </div>
+            </div>
+            
+            <div class="painting-container" id="p19">
+                <img class="painting" id="img19" src="img_stacks_of_wheat/1922.431 - Stacks of Wheat (Sunset, Snow Effect).jpg">
+                <div class="painting-info">
+                    <div class="painting-title">Stacks of Wheat (Sunset, Snow Effect)</div>
+                    <div class="painting-date">1890/1891</div>
+                    <div class="painting-museum">The Art Institute of Chicago</div>
+                    <div class="painting-museum-location">Chicago, United States</div>
+                </div>
+            </div>
+
         </div>
-        <div class="circle" id="circle9">
-            <div class="number">9</div>
-            <div class="series-title" id="s-t-1">Morning Haze</div>
-        </div>
-        <div class="circle" id="circle10">
-            <div class="number">10</div>
-            <div class="series-title" id="s-t-1">Houses of Parliament</div>
-        </div>
-        <div class="circle" id="circle11">
-            <div class="number">11</div>
-            <div class="series-title" id="s-t-1">Étretat Cliffs</div>
-        </div>
-        <div class="circle" id="circle12">
-            <div class="number">12</div>
-            <div class="series-title" id="s-t-1">Étretat Beach</div>
-        </div>
+        
     </div>
 
-    <script src="script-page1.js"></script>
+    <script src="script-page4.js"></script>
 </body>
 </html>
