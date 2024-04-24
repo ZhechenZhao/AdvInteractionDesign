@@ -13,6 +13,28 @@ body {
     height: 100px;
 }
 
+.main-heading {
+    position: absolute;
+    translate: 0px -20px;
+
+    font-size: 36px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secondary-heading {
+    position: absolute;
+    translate: 0px 30px;
+
+    font-size: 32px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 12%;
+}
+
+
 .circle {
     position: absolute;
     width: 100px;
